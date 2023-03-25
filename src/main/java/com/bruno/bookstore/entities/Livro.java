@@ -24,7 +24,7 @@ public class Livro  implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	private String titulo ;
 	private String autor;
 	private String sipnose;
@@ -32,5 +32,7 @@ public class Livro  implements Serializable{
 	@ManyToOne
 	@JoinColumn(name = "categoria_id")
 	private Categoria categoria;
+
+	
 
 }
